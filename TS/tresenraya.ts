@@ -76,20 +76,39 @@ class TresEnRaya {
         return this.indexes[pos] != " ";
     }
 
+    all_occupied() {
+        for (let i = 1; i <= 9; i++) {
+            if (this.indexes[i] == " ") {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     main() {
         let pos;
         while (!this.win) {
             this.draw();
             pos = this.ask_position();
-            this.indexes[pos] = this.symbol;
-
+            
+            // Calculate the row and column of the position
+            let row = Math.floor((pos - 1) / 3);
+            let col = (pos - 1) % 3;
+    
+            // Update the board
+            this.tablero[row][col] = this.symbol;
+    
             if (this.check_win(this.symbol)) {
                 this.win = true;
                 console.log(this.symbol + " ha ganado");
+            } else if (this.all_occupied()) {
+                this.win = true;
+                console.log("Empate");
             } else {
                 this.symbol = this.symbol == 'x' ? 'o' : 'x';
             }
+            
         }
     }
     
