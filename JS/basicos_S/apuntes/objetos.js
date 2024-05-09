@@ -33,3 +33,10 @@ function Persona(nombre, apellido, edad) {
 
 let persona1 = new Persona("Juan", "Perez", 30); //el new es para crear un nuevo objeto
 let persona2 = new Persona("Maria", "Lopez", 25); //el new es para crear un nuevo objeto
+
+
+console.log(persona1.nombre);
+console.log(persona1.apellido);
+
+
+console.log(persona2.nombre); //buenos dias
