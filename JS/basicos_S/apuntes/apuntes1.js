@@ -22,6 +22,45 @@ console.log(edad);
 let esEstudiante = true;
 console.log(esEstudiante);
 
+
+//variables dentro de un string
+let nombre2 = "Juan";
+let edad2 = 30;
+let esEstudiante2 = true;
+console.log("Nombre: " + nombre2 + ", Edad: " + edad2 + ", Es estudiante: " + esEstudiante2);
+// otro metodo
+console.log(`Nombre: ${nombre2}, Edad: ${edad2}, Es estudiante: ${esEstudiante2}`);
+
+
+//coger el tipo de dato
+console.log(typeof nombre2);
+
+//Conversion de tipos de datos
+let numero = "5";
+console.log(typeof numero);
+numero = parseInt(numero);
+console.log(typeof numero);
+
+//coger elementos por terminal
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+    });
+
+rl.question('Introduce un número: ', (numero) => {
+    console.log('El número introducido es: ' + numero);
+    rl.close();
+});
+
+
+
+
+
+
+
+
 //Operadores
 //Aritmeticos
 let suma = 5 + 5;
@@ -61,6 +100,33 @@ if (hora < 12) {
     console.log("Buenas tardes");
 } else {
     console.log("Buenas noches");
+}
+
+//Ternario
+let edad3 = 15;
+let mensaje = edad3 >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
+
+console.log(mensaje);
+
+// el = es para asignar un valor a una variable y el == es para comparar dos valores y el === es para comparar dos valores y que sean del mismo tipo
+console.log("1" == 1);//true
+console.log("1" == 1); //false
+
+//Switch
+let dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Lunes");
+        break;
+    case 2:
+        console.log("Martes");
+        break;
+    case 3:
+        console.log("Miercoles");
+        break;
+    default:
+        console.log("Otro dia");
 }
 
 //Ciclos
