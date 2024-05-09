@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2f343a;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #534b4b;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#content {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#completed_tasks{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 500px;
+    
+    /*colocar el div a la izquierda*/
+    float: left;
+}
+
+#completed_tasks h2{
+    text-align: center;
+}
+
+#completed li{
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    list-style: none;
+    ;
+
+}
+
+
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#add {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: #0056b3;
+}
+
+#text {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#task {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+#tasks,
+#completed_tasks {
+    flex: 1;
+    list-style: none;
+    
+}
+
+#tasks li{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#completed_tasks li{
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#completed_tasks li:hover{
+    background-color: #17662f;
+}
+
+#tasks li:hover{
+    background-color: #8994a1;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.marked {
+    text-decoration: bold line-through;
+    color: rgb(33, 228, 16);
+    background-color: #8994a1;
+    padding: 10px;
+    margin-bottom: 5px;
+        
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+
+
+

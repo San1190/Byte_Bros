@@ -207,3 +207,32 @@ console.log(cadena.replace("Mundo", "Juan"));
 console.log(cadena.toUpperCase());
 console.log(cadena.toLowerCase());
 
+
+
+
+//excepciones
+try {
+    throw "Error";
+}
+catch (error) {
+    console.log(error);
+}
+finally {
+    console.log("Finally");
+}
+
+//tiene throw, try, catch y finally y se usa para manejar errores en el codigo
+//el throw se usa para lanzar un error
+//el try se usa para probar un bloque de codigo
+//el catch se usa para manejar el error
+//el finally se ejecuta siempre al final del try y catch
+
+//JSON
+let persona3 = {
+    nombre: "Juan",
+    edad: 30,
+    esEstudiante: true
+};
+ 
+let personaJSON = JSON.stringify(persona3);
+console.log(personaJSON);
