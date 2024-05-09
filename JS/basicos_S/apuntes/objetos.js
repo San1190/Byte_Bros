@@ -40,3 +40,11 @@ console.log(persona1.apellido);
 
 
 console.log(persona2.nombre); //buenos dias
+
+
+//inicializador de objetos individuales
+var John = {name: "John", age: 25};
+var Jane = {name: "Jane", age: 22};
+
+
+document.write(John.name + " tiene " + John.age + " años. " + Jane.name + " tiene " + Jane.age + " años.");
