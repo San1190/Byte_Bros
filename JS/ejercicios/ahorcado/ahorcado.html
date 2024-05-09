@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego del Ahorcado</h1>
+        <div id="ahorcado-container">
+            <div id="palabra-oculta"></div>
+            <div id="intentos">Intentos restantes: <span id="intentos-restantes"></span></div>
+            <div id="letras-usadas">Letras usadas: <span id="letras-usadas"></span></div>
+            <input type="text" id="letra-input" placeholder="Ingresa una letra" maxlength="1">
+            <button id="enviar-letra-btn">Enviar letra</button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
