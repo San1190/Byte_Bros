@@ -1,0 +1,8 @@
+'''SoloLearn/
+   LICENSE.txt
+   README.txt
+   setup.py
+   sololearn/
+      __init__.py
+      sololearn.py
+      sololearn2.py'''

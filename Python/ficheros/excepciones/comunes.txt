@@ -1,0 +1,9 @@
+-Tipos de excepciones:
+-ImportError: falla de una importación
+-IndexError: una lista es indexada con un número fura de rango
+-NameError:una variable desconocida es utilizada
+-SyntaxError: el código no puede ser analizado correctamente.
+-TypeError: una función es llamada con un valor de tipo inapropiado
+-ValueError: una función es llamda con un valor del tipo correcto pero con un valor incorrecto
+
+(Otras como ZeroDivisionError y OSError)

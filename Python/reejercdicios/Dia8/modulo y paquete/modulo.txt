@@ -1,0 +1,3 @@
+wl modulo es .py ( vamos todo) y se importa con import nombre num
+
+paquetes ( init .y)
