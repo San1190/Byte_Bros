@@ -1,1 +1,6 @@
 .vscode/
+
+# Ignorar archivos objeto y ejecutables generados por la compilación de C y C++
+*.o
+*.out
+*.exe
