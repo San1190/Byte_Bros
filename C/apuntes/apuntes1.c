@@ -151,6 +151,21 @@ int main(){
     punto.y = 10;
     printf("Punto: (%d, %d)\n", punto.x, punto.y);
 
+    //Operadores de puntero a estructura
+    struct Punto *punto2 = &punto;
+    printf("Punto: (%d, %d)\n", punto2->x, punto2->y);
+
+    // Rellena los espacios en blanco para declarar una estructura de tiempo con dos miembros, minutos y horas.
+    struct tiempo
+    {
+        int minutos;
+        int horas;
+    };
+
+    //renombrar la estructura de tiempo a reloj
+    typedef struct tiempo reloj;
+    
+
     //Operadores de unión
     union Numero{
         int entero;
