@@ -12,7 +12,7 @@ puts "Hola Mundo"
 variable = "Hola Mundo"
 puts variable
 
-# Para declarar una constante utilizamos la palabra reservada constante
+# Para declarar una constante utilizamos la palabra en mayúsculas
 CONSTANTE = "Hola Mundo"
 puts CONSTANTE
 
