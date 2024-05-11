@@ -56,3 +56,11 @@ console.log(fecha2);
 //alertas 
 
 alert("Hola");
+
+
+
+
+
+//Con esto finalizamos el archivo apuntes2.js
+// Espero que te haya sido de ayuda
+// Atentamente: S

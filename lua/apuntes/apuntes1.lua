@@ -286,3 +286,9 @@ print(string.rep(Cadena, 2))
 print(string.reverse(Cadena))
 print(string.sub(Cadena, 1, 4))
 print(string.upper(Cadena))
+
+
+
+
+--Gracias por leer 
+--Atentamente S

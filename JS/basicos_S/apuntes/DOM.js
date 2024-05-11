@@ -254,3 +254,15 @@ function validate() {
   return false;
 }
 //devo de validar que los campos no esten vacios y que sean iguales
+
+
+
+
+
+
+
+
+
+
+
+// Atentamente: S
