@@ -1,2 +1,0 @@
-def Hola():
-    print("Hey")

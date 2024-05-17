@@ -1,3 +1,0 @@
-Son una secuencia de caracteres que forman un patrón de búsquedas.
-
-Sirven para buscar x en una cadena de texto o comprobar formatos o numeros.
