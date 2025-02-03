@@ -1,0 +1,191 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CSharpCheatSheet
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("----- C# Cheat Sheet -----");
+            Console.WriteLine("\n--- 1. Tipos de Datos ---");
+            int edad = 30;
+            string nombre = "Ana";
+            double precio = 99.99;
+            bool esValido = true;
+            char inicial = 'A';
+            Console.WriteLine($"int: {edad}, string: {nombre}, double: {precio}, bool: {esValido}, char: {inicial}");
+        
+            Console.WriteLine("\n--- 2. Variables ---");
+            int contador; // Declaración
+            string mensaje = "Hola"; // Declaración e inicialización
+            Console.WriteLine($"contador (declarado): {contador} (no inicializado) string (inicializado): {mensaje}");
+        
+            Console.WriteLine("\n--- 3. Operadores ---");
+            int a = 5, b = 10;
+            Console.WriteLine($"a + b: {a + b}, a > b: {a > b}, !esValido: {!esValido}, contador++: {(contador = 10)++}");
+          
+            Console.WriteLine("\n--- 4. Condicionales ---");
+            if (edad >= 18) {
+                Console.WriteLine("Mayor de edad");
+            } else {
+                Console.WriteLine("Menor de edad");
+            }
+            int opcion = 1;
+            switch (opcion) {
+                case 1:
+                    Console.WriteLine("Opción 1");
+                    break;
+            }
+
+            Console.WriteLine("\n--- 5. Bucles ---");
+            for (int i = 0; i < 3; i++) {
+                 Console.Write(i + " ");
+            }
+            Console.WriteLine();
+
+            int j = 0;
+            while (j < 3)
+            {
+                Console.Write(j + " ");
+                j++;
+            }
+            Console.WriteLine();
+
+              int k = 0;
+            do
+            {
+                 Console.Write(k + " ");
+                k++;
+            } while (k < 3);
+            Console.WriteLine();
+            
+
+            Console.WriteLine("\n--- 6. Métodos ---");
+            int suma = Sumar(5, 7);
+            Saludar("Carlos");
+            Console.WriteLine($"Suma: {suma}");
+
+            Console.WriteLine("\n--- 7. Clases ---");
+            Persona persona1 = new Persona() { Nombre = "Juan", Edad = 25 };
+            Console.WriteLine($"Persona: {persona1.Nombre} , Edad: {persona1.Edad} ");
+           
+            Console.WriteLine("\n--- 8. Objetos ---");
+            Persona persona2 = new Persona();
+            persona2.Nombre = "Maria";
+            Console.WriteLine($"Nueva persona: {persona2.Nombre}");
+
+            Console.WriteLine("\n--- 9. Herencia ---");
+            Empleado empleado1 = new Empleado() { Nombre = "Pedro", Edad = 35, Salario = 3000.00 };
+          Console.WriteLine($"Empleado: {empleado1.Nombre}, salario: {empleado1.Salario}");
+         
+            Console.WriteLine("\n--- 10. Interfaces ---");
+            Calculadora calculadora = new Calculadora();
+          Console.WriteLine($"Suma: {calculadora.Sumar(10,20)}");
+            
+             Console.WriteLine("\n--- 11. Excepciones ---");
+            try {
+                int resultado = 10 / 0;
+            } catch (Exception ex) {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            
+             Console.WriteLine("\n--- 12. Namespaces ---");
+           //Ya usados en el codigo using System etc
+             Console.WriteLine("Namespaces System, System.Collection.Generic etc usados para organizar el codigo");
+
+             Console.WriteLine("\n--- 13. Colecciones ---");
+            List<string> nombres = new List<string>() { "Ana", "Beatriz", "Carlos" };
+           Dictionary<string, int> edades = new Dictionary<string, int>() { { "Ana", 20 }, { "Beatriz", 22 } };
+             Console.WriteLine($"Lista nombres: {string.Join(", ", nombres)}, diccionario edades: {string.Join(",", edades.Select(kvp => $"{kvp.Key}:{kvp.Value}"))} ");
+        
+              Console.WriteLine("\n--- 14. LINQ ---");
+            var resultadoLinq = nombres.Where(n => n.StartsWith("A")).ToList();
+            var sumaLinq = edades.Values.Sum();
+            Console.WriteLine($"LINQ: nombres con A: {string.Join(", ",resultadoLinq)}, suma edades: {sumaLinq}");
+             
+             Console.WriteLine("\n--- 15. Async/Await ---");
+             var resultadoAsincrono =  DescargarDatosAsync().Result;
+                Console.WriteLine($"Async/Await: Datos descargados: {resultadoAsincrono}");
+
+            Console.WriteLine("\n--- 16. Propiedades ---");
+          
+           Persona persona3 = new Persona() {Nombre = "Lucía", Edad = -1};
+            Console.WriteLine($"Propiedades: nombre={persona3.Nombre}, edad={persona3.Edad}");
+             
+              Console.WriteLine("\n--- 17. Constructores ---");
+           Persona persona4 = new Persona("David", 40);
+          Console.WriteLine($"Constructor: nombre: {persona4.Nombre} edad:{persona4.Edad}");
+            
+            Console.WriteLine("\n--- 18. Delegados ---");
+           MiDelegado delegado = Saludar;
+            delegado("Elena");
+           
+           Console.WriteLine("\n--- 19. Arrays ---");
+           int[] numeros = { 1, 2, 3, 4, 5 };
+              Console.WriteLine($"Array de numeros: {string.Join(", ", numeros)}");
+
+              Console.WriteLine("\n--- 20. Posición en Arrays ---");
+             int primerNumero = numeros[0];
+           Console.WriteLine($"Primer elemento: {primerNumero}, Ultimo elemento: {numeros[numeros.Length-1]}");
+
+            Console.WriteLine("\n--- 21. foreach ---");
+              Console.WriteLine("Recorrido con foreach:");
+           foreach(var num in numeros) {
+               Console.Write(num + " ");
+            }
+           Console.WriteLine();
+             
+           Console.WriteLine("\n--- 22. Operador ternario ---");
+           int calificacion = 7;
+           string resultadoTernario = calificacion >= 5 ? "Aprobado" : "Suspendido";
+             Console.WriteLine($"Operador ternario: calificacion {calificacion} : {resultadoTernario}");
+               Console.WriteLine("Presiona cualquier tecla para salir.");
+                  Console.ReadKey();
+        }
+         static int Sumar(int a, int b)
+          {
+             return a + b;
+          }
+        static void Saludar(string nombre)
+         {
+           Console.WriteLine($"Hola, {nombre}!");
+         }
+       public async static Task<string> DescargarDatosAsync()
+        {
+          await Task.Delay(1000);
+           return "Datos descargados";
+         }
+       
+       
+    }
+    public class Persona
+        {
+           public string Nombre { get; set; }
+           private int _edad;
+           public int Edad { get { return _edad; }
+                                set { _edad = value >= 0 ? value : 0; }
+           }
+           public Persona(string nombre, int edad)
+             {
+               Nombre = nombre;
+                Edad = edad;
+           }
+            public Persona() {}
+        }
+     public class Empleado : Persona
+      {
+        public double Salario { get; set; }
+      }
+     public interface ICalculable
+       {
+         int Sumar(int a, int b);
+       }
+      public class Calculadora : ICalculable
+       {
+        public int Sumar(int a, int b) { return a + b; }
+       }
+    public delegate void MiDelegado(string mensaje);
+}

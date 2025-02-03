@@ -1,0 +1,15 @@
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.AssemblyInfoInputs.cache
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.AssemblyInfo.cs
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.csproj.CoreCompileInputs.cache
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.sourcelink.json
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\bin\Debug\net9.0\san.exe
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\bin\Debug\net9.0\san.deps.json
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\bin\Debug\net9.0\san.runtimeconfig.json
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\bin\Debug\net9.0\san.dll
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\bin\Debug\net9.0\san.pdb
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.dll
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\refint\san.dll
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.pdb
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\san.genruntimeconfig.cache
+C:\Users\sanfu\Desktop\Programacion\Byte_Bros\C#\san\obj\Debug\net9.0\ref\san.dll
